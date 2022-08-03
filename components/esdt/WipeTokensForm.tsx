@@ -134,7 +134,7 @@ const WipeTokensForm = ({ cb }: { cb: (params: TransactionCb) => void }) => {
                       message: 'No more than 17 characters',
                     },
                     pattern: {
-                      value: /^[A-Z]{3,10}-[a-z0-9]{6}$/,
+                      value: /^[A-Z0-9]{3,10}-[a-z0-9]{6}$/,
                       message: 'Invalid Tocken Ticker',
                     },
                   })}

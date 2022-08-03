@@ -125,7 +125,7 @@ const PauseTokensForm = ({ cb }: { cb: (params: TransactionCb) => void }) => {
                 <RadioGroup colorScheme="teal" defaultValue="mint">
                   <Stack spacing={5} direction="row" justifyContent="center">
                     <Radio
-                      value="mint"
+                      value="pause"
                       color={useColorModeValue(
                         'blackAlpha.700',
                         'whiteAlpha.600'
@@ -135,7 +135,7 @@ const PauseTokensForm = ({ cb }: { cb: (params: TransactionCb) => void }) => {
                       Pause
                     </Radio>
                     <Radio
-                      value="burn"
+                      value="unpause"
                       color={useColorModeValue(
                         'blackAlpha.700',
                         'whiteAlpha.600'
@@ -173,7 +173,7 @@ const PauseTokensForm = ({ cb }: { cb: (params: TransactionCb) => void }) => {
                       message: 'No more than 17 characters',
                     },
                     pattern: {
-                      value: /^[A-Z]{3,10}-[a-z0-9]{6}$/,
+                      value: /^[A-Z0-9]{3,10}-[a-z0-9]{6}$/,
                       message: 'Invalid Tocken Ticker',
                     },
                   })}

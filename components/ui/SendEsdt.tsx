@@ -165,7 +165,7 @@ const SendEsdt = ({ cb }: { cb: (params: TransactionCb) => void }) => {
                           message: 'No more than 17 characters',
                         },
                         pattern: {
-                          value: /^[A-Z]+-[a-zA-Z0-9]+$/,
+                          value: /^[A-Z0-9]{3,10}-[a-z0-9]{6}$/,
                           message: 'Invalid Tocken Ticker',
                         },
                       })}
